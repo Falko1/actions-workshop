@@ -1,0 +1,22 @@
+name: Update the project version
+
+on: [push]
+
+permissions: write-all
+
+jobs:
+
+  check-files:
+    runs-on: windows
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+      - name: Bump version
+        uses: remorses/bump-version@js
+        with:
+          version_file: ./VERSION
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
