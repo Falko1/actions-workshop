@@ -8,7 +8,7 @@
 [![CI](https://github.com/akatief/actions-workshop/actions/workflows/main.yml/badge.svg)](https://github.com/akatief/actions-workshop/actions/workflows/main.yml)
 
 This is a small workshop teaching how to use [GitHub Actions](https://docs.github.com/en/actions)! You will implement a small action to bump the version of this package and update the logo accordingly. 
-a
+
 ## Getting Started
 
 Follow these steps to start working on the workshop:
